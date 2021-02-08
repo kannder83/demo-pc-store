@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+body {
+  /* width: 100%;
+  height: 60vh; */
+  font-family: "Exo 2", sans-serif;
+}
+
+/* =========================== BACKGROUND ====================== */
+
+.main-background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../sources/img/background.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* =========================== HEADER ====================== */
+
+.header {
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header .header-logo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header .header-logo img {
+  width: 50px;
+}
+
+.header .header-logo p {
+  font-size: 30px;
+  margin-left: 10px;
+  color: rgb(117, 117, 117);
+}
+
+.header .header-nav {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+
+.header .header-nav nav {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .header-nav nav ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.header .header-nav nav ul li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: ease-out 0.1s;
+  color: #494949;
+}
+
+.header .header-nav nav ul li a:hover {
+  color: #29d4c0;
+  border-bottom: 3px solid #29d4c0;
+  opacity: 0.75;
+}
+
+/* =========================== MAIN ====================== */
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.main .container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.box-main-title {
+  width: 400px;
+  height: 200px;
+  margin: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(5px);
+}
+
+/* =========================== PRODUCT ====================== */
+
+.product {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* =========================== CONTACT ====================== */
+
+.contact {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* =========================== FOOTER ====================== */
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
